@@ -12,4 +12,3 @@ galaxy_info:
   - web
 dependencies:
   - marklee77.mariadb
-  - marklee77.modules-extra
