@@ -28,6 +28,7 @@
     - ruby1.9.1
     - ruby1.9.1-dev
     - zlib1g-dev
+    - python-mysqldb
 
 - name: ensure that gitlab user exists in ldap
   ldap:
