@@ -115,8 +115,9 @@
 
 - name: check gitlab out of git repository
   sudo_user: git
-  command: git clone "{{ gitlab_git_url }}" /home/git/gitlab
-           creates=/home/git/gitlab
+  command: "{{ gitlab_git_clone_cmd }}"
+  args:
+    creates: /home/git/gitlab
 
 - name: ensure publicly accessible gitlab subdirectories exist and have correct permissions
   file:

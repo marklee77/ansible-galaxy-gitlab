@@ -1,5 +1,5 @@
 ---
-gitlab_git_url: "https://gitlab.com/gitlab-org/gitlab-ce.git -b 7-1-stable"
+gitlab_git_clone_cmd: git clone "https://gitlab.com/gitlab-org/gitlab-ce.git -b 7-1-stable" /home/git/gitlab
 
 # Host root  DB Credentials
 gitlab_mysql_password: root
