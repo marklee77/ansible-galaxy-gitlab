@@ -10,6 +10,3 @@ galaxy_info:
     - trusty
   categories:
   - web
-dependencies:
-  - marklee77.mariadb
-  - marklee77.modules-extra

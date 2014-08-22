@@ -4,7 +4,7 @@ production:
   reconnect: false
   database: gitlabhq_production
   pool: 10
-  username: git
-  password: "{{ gitlab_git_mysql_password }}"
-  # host: localhost
+  username: "{{ gitlab_mysql_user }}"
+  password: "{{ gitlab_mysql_password }}"
+  host: "{{ gitlab_mysql_host }}"
   # socket: /tmp/mysql.sock

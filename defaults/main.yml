@@ -1,6 +1,15 @@
 ---
-gitlab_run_dir: "{{ lookup('env', 'PWD') }}"
+gitlab_git_clone_cmd: git clone "https://gitlab.com/gitlab-org/gitlab-ce.git -b 7-1-stable" /home/git/gitlab
+
+# Host root  DB Credentials
+gitlab_mysql_password: root
+gitlab_mysql_user: root
+gitlab_mysql_host: localhost
+gitlab_mysql_password: root
+
 gitlab_git_mysql_password: "{{ lookup('password', gitlab_run_dir + '/private/credentials/git-mysql-password') }}"
+
+gitlab_run_dir: "{{ lookup('env', 'PWD') }}"
 gitlab_ldap_password: "{{ lookup('password', gitlab_run_dir + '/private/credentials/gitlab-ldap-password') }}"
 gitlab_ldap_password_salt: "{{ lookup('password', gitlab_run_dir + '/private/credentials/gitlab-ldap-password-salt length=4') }}"
 
